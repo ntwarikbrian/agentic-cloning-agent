@@ -1,0 +1,12 @@
+# SketchByte dependencies
+# The notebooks install these automatically on Colab (see installer.ipynb).
+# This file is for local runs / reproducibility.
+
+qwen-tts
+transformers>=4.51
+accelerate
+soundfile
+librosa
+ipywidgets
+torch>=2.6
+numpy
