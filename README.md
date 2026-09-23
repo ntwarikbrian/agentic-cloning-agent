@@ -38,10 +38,10 @@ State is passed between notebooks through **kernel globals** plus **files writte
 2. **Reference voice** — in your Google Drive, create this layout, matching `REFERENCE_AUDIO` in `installer.ipynb` (default `fishengagement.mp3`):
 
    ```
-   My Drive/SketchByte/Voice/<reference-audio.mp3>
+   My Drive/SketchByte/Voice/fishengagement.mp3
    ```
 
-   Use a clean, isolated clip of the voice you want cloned (3+ seconds recommended).
+   Use a clean, isolated clip of the voice you want cloned (3+ seconds recommended). Step 2 **auto-converts** the file to a canonical 24 kHz mono WAV (`<name>_ref_24k.wav`) if it isn't already a WAV, so MP3/OGG references are handled safely.
 
 3. **Transcript** — set `REFERENCE_TEXT` in `installer.ipynb` to exactly what is said in the reference audio. Without it, voice cloning degrades to speaker-embedding-only.
 
